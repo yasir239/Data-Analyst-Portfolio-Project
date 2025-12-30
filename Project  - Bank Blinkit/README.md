@@ -32,10 +32,14 @@ Primary dataset: `BlinkIT Grocery Data.csv` (order-level and product-level field
 ## using python
 
 <img width="515" height="411" alt="image" src="https://github.com/user-attachments/assets/27ed8ee8-5504-4ad3-a315-9460769ac59e" />
-<img width="515" height="411" alt="image" src="https://github.com/user-attachments/assets/95d62742-591f-4db2-a3b2-3375be21e4e8" />
-<img width="515" height="411" alt="image" src="https://github.com/user-attachments/assets/2446b744-f3f5-48bb-b980-dcb96e1745a6" />
-<img width="515" height="411" alt="image" src="https://github.com/user-attachments/assets/7f455223-9e0d-461e-baf9-078e796e7b05" />
-<img width="515" height="411" alt="image" src="https://github.com/user-attachments/assets/455cfbf6-9e09-40bd-95c7-64a90016d823" />
+<img width="989" height="590" alt="image" src="https://github.com/user-attachments/assets/503e9bd2-df3c-407c-8aa3-1c7e0de71096" />
+
+<img width="790" height="490" alt="image" src="https://github.com/user-attachments/assets/b6a9e552-e0aa-492a-9c3f-49e0941337ff" />
+
+<img width="889" height="490" alt="image" src="https://github.com/user-attachments/assets/07fdc9e3-32a9-40b5-8987-d0150bed2175" />
+
+<img width="372" height="390" alt="image" src="https://github.com/user-attachments/assets/c6f28789-40af-401c-b691-a9c91098b574" />
+
 <img width="708" height="316" alt="image" src="https://github.com/user-attachments/assets/073472f4-a147-476a-b587-3a218bf7e24f" />
 
 
