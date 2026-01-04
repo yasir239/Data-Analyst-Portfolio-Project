@@ -1,46 +1,57 @@
-# Project - Riyadh Metro
+# Riyadh Commercial Density and Metro Impact Analysis
 
-Brief data analysis and reporting for Riyadh Metro integrated dataset.
+## Project Overview
+This project implements an end-to-end Data Engineering (ETL) pipeline to analyze the commercial landscape of Riyadh, Saudi Arabia. The primary objective is to evaluate the correlation between the Riyadh Metro network and commercial service density across different districts.
 
-Contents
+The system automates the extraction of geospatial data using Python, transforms it into a structured format, loads it into a PostgreSQL data warehouse, and visualizes key economic insights through an interactive Power BI dashboard.
 
-How to use
-1. Create and activate a virtual environment (recommended).
-2. Install dependencies:
+## System Architecture
+The project follows a standard ETL workflow:
+
+1. **Extraction:** Ingesting raw CSV data containing point-of-interest (POI) records.
+2. **Transformation (Python/Pandas):** - Cleaning unstructured data and handling missing values.
+   - Engineering geospatial features (e.g., Metro accessibility flags).
+   - Aggregating granular data into district-level statistics.
+3. **Loading (PostgreSQL):** Persisting the processed data into a relational database schema.
+4. **Visualization (Power BI):** Connecting directly to the database to generate business intelligence reports.
+
+## Data Source and Processing
+The dataset is located in the `data/` directory of this repository (`riyadh_integrated_analysis.csv`).
+
+### Raw Data Characteristics
+Before processing, the raw data presented several challenges:
+* **Granularity:** Unstructured individual commercial points without district-level aggregation.
+* **Missing Data:** Significant gaps in user ratings and category classifications.
+* **Lack of Context:** Absence of transportation metrics (Metro proximity).
+
+### Applied Transformations
+* **Feature Engineering:** Calculated and assigned a binary `has_metro` flag to each district based on geospatial analysis.
+* **Data Cleaning:** Imputed missing values and standardized district names for consistent SQL querying.
+
+## Technologies Used
+* **Language:** Python 3.9+
+* **ETL Libraries:** Pandas, NumPy
+* **Database:** PostgreSQL
+* **ORM & Drivers:** SQLAlchemy, Psycopg2
+* **Visualization:** Microsoft Power BI
+* **Version Control:** Git
+## Analysis using python 
+<img width="2156" height="1225" alt="Screenshot 2026-01-04 030927" src="https://github.com/user-attachments/assets/118c1d1d-6b47-417d-ae83-c42f5c82f7aa" />
+
+## Anlaysis using PowerBi
+<img width="1403" height="791" alt="Screenshot 2026-01-04 022624" src="https://github.com/user-attachments/assets/a9464ead-2966-432f-a109-442de427105a" />
 
 
-3. Open and run `Riyadh_integrated_analysis_using_python.ipynb` in Jupyter Notebook or JupyterLab.
-4. Optionally open the Power BI file with Power BI Desktop to view the dashboard.
 
-Notes
-
-Author
-# Project - Riyadh Metro
-
-Brief data analysis and reporting for Riyadh Metro integrated dataset.
-
-Contents
-- `riyadh_integrated_analysis_Cleaned.csv` — cleaned dataset used for analysis
-- `Riyadh_integrated_analysis_using_python.ipynb` — main analysis notebook (Python)
-- `upload to PostgreSQL.ipynb` — notebook to demonstrate loading data to PostgreSQL
-- `First Report using PowerBI.pbix` — Power BI report (binary)
-- `commercial_services_by_category_sub_2024 _before cleaning.xlsx` — supplementary Excel data
-- `requirements.txt` — Python dependencies
-
-How to use
-1. Create and activate a virtual environment (recommended).
-2. Install dependencies:
-
-```
-pip install -r "Project - Riyadh Metro/requirements.txt"
-```
-
-3. Open and run `Riyadh_integrated_analysis_using_python.ipynb` in Jupyter Notebook or JupyterLab.
-4. Optionally open the Power BI file with Power BI Desktop to view the dashboard.
-
-Notes
-- Large binary files (Power BI report, Excel) are included in the folder; they are not required to run the notebook if you only use the CSV.
-- If you plan to load data to PostgreSQL, update the connection parameters in `upload to PostgreSQL.ipynb`.
-
-Author
-- Repository owner: yasir239
+## Repository Structure
+```text
+.
+├── data/
+│   └── riyadh_integrated_analysis.csv    # Source dataset
+├── scripts/
+│   └── etl_pipeline.py                   # Main ETL Python script
+├── dashboard/
+│   ├── dashboard_screenshot.png          # Visual preview of the report
+│   └── Riyadh_Analysis.pbix              # Power BI project file
+├── requirements.txt                      # Project dependencies
+└── README.md                             # Project documentation
