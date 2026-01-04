@@ -1,8 +1,6 @@
 # Riyadh Commercial Density and Metro Impact Analysis
-
 ## Project Overview
 This project implements an end-to-end Data Engineering (ETL) pipeline to analyze the commercial landscape of Riyadh, Saudi Arabia. The primary objective is to evaluate the correlation between the Riyadh Metro network and commercial service density across different districts.
-
 The system automates the extraction of geospatial data using Python, transforms it into a structured format, loads it into a PostgreSQL data warehouse, and visualizes key economic insights through an interactive Power BI dashboard.
 
 ## Analysis using python 
