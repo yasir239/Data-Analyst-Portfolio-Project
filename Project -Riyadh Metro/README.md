@@ -3,6 +3,23 @@
 Brief data analysis and reporting for Riyadh Metro integrated dataset.
 
 Contents
+
+How to use
+1. Create and activate a virtual environment (recommended).
+2. Install dependencies:
+
+
+3. Open and run `Riyadh_integrated_analysis_using_python.ipynb` in Jupyter Notebook or JupyterLab.
+4. Optionally open the Power BI file with Power BI Desktop to view the dashboard.
+
+Notes
+
+Author
+# Project - Riyadh Metro
+
+Brief data analysis and reporting for Riyadh Metro integrated dataset.
+
+Contents
 - `riyadh_integrated_analysis_Cleaned.csv` — cleaned dataset used for analysis
 - `Riyadh_integrated_analysis_using_python.ipynb` — main analysis notebook (Python)
 - `upload to PostgreSQL.ipynb` — notebook to demonstrate loading data to PostgreSQL
